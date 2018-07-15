@@ -17,26 +17,20 @@ MongoClient.connect('mongodb://localhost:27017/ToDoApp', {useNewUrlParser: true}
     }).then((result) => {
         console.log(result);
     });
-    */
 
     //deleteOne
-    /*
     db.collection('Todos').deleteOne({
         text: "Lunch"
     }).then((result) => {
         console.log(result);
     });
-    */
 
     //findOneAndDelete
-    /*
     db.collection('Todos').findOneAndDelete({
         completed: false
     }).then((result) => {
         console.log(result);
     });
-    */
-
     
     db.collection('Users').deleteMany({
         name : "Jaclyn Regina"
@@ -44,7 +38,6 @@ MongoClient.connect('mongodb://localhost:27017/ToDoApp', {useNewUrlParser: true}
         console.log(result)
     });
 
-    /*
     db.collection('Users').findOneAndDelete({
         _id: new ObjectID("5b4b82b159d67f3fc0dd797d")
     }).then((result) => {
